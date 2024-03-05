@@ -14,8 +14,7 @@
  */
 %rename(__assign__) *::operator=;
 
-/* [] is array subscript, as you'd expect.
- */
+
 %rename(__index__) vips::VIMask::operator[];
 %rename(__index__) vips::VDMask::operator[];
 
