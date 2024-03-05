@@ -80,18 +80,5 @@
 
     return result;
   }
-%extend CLASS {
-  std::vector<TYPE *> *NAME() const {
-    std::vector<TYPE *> *result = new std::vector<TYPE *>;
-    result->reserve(LENGTH);
 
-    TYPE *currentValue = $self->NAME;
-    TYPE *valueLimit = $self->NAME + LENGTH;
-    while (currentValue < valueLimit) {
-      result->push_back(currentValue);
-      ++currentValue;
-    }
-
-    return result;
-  }
 }
